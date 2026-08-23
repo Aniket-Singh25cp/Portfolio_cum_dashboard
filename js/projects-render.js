@@ -50,12 +50,11 @@ function renderProjectsGrid() {
 }
 
 function getProjectIdFromURL() {
-  // Supports both clean /projects/:id (via vercel.json rewrite)
-  // and /project.html?id=:id as a fallback.
+  // Supports clean /projects/:id (via vercel.json rewrite) and
+  // /project.html?id=:id or /project?id=:id (cleanUrls strips .html) as a fallback.
   const path = window.location.pathname.replace(/\/+$/, "");
-  const parts = path.split("/");
-  const last = parts[parts.length - 1];
-  if (last && last !== "project.html" && last !== "") return decodeURIComponent(last);
+  const match = path.match(/\/projects\/([^/]+)$/);
+  if (match) return decodeURIComponent(match[1]);
 
   const params = new URLSearchParams(window.location.search);
   return params.get("id");
