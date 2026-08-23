@@ -45,8 +45,8 @@ window.PROJECTS = [
       "serverless function at /api/generate.",
     tags: ["Python", "Gemini API", "Vercel Serverless", "HTML/CSS/JS"],
     image: "./projects/images/resume-generator.png",
-    github: "https://github.com/Aniket-Singh25cp/portfolio/tree/main/apps/resume-generator",
-    live: "./apps/resume-generator/index.html"
+    github: "https://github.com/Aniket-Singh25cp/Resume_To_Portfolio_Generator",
+    live: "/apps/resume-generator/index.html"
   },
 
   {
@@ -62,8 +62,8 @@ window.PROJECTS = [
       "records can be exported to CSV in one click.",
     tags: ["JavaScript", "Supabase", "Chart.js", "Data Visualization"],
     image: "./projects/images/voyx-dashboard.png",
-    github: "https://github.com/Aniket-Singh25cp/portfolio/tree/main/apps/voyx-dashboard",
-    live: "./apps/voyx-dashboard/index.html"
+    github: "https://github.com/Aniket-Singh25cp/Portfolio_cum_dashboard",
+    live: "/apps/voyx-dashboard/index.html"
   },
 
   // --- remove this template once you've added your own projects ---
